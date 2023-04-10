@@ -1,0 +1,21 @@
+//- html
+//-     head
+//-         title Person
+//-     body
+//-         if(type == "error")
+//-             h3(style = "color:red") #{message}
+//-         else
+//-             //-   h3 #{message}, 
+//-             //-      name: #{person.name}     
+//-             //-      age: #{person.age} and
+//-             //-      nationality: #{person.nationality}
+//-             h3 #{message}: name=#{person.name} age=#{person.age} nationality=#{person.nationality}
+html
+   head
+      title Person
+   body
+      if(type == "error")
+         h3(style = "color:red") #{message}
+      else
+         h3 #{message}  
+         p name:#{person.name} age:#{person.age} nationality:#{person.nationality}
